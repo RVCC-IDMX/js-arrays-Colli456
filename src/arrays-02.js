@@ -40,6 +40,7 @@
  */
 function findTheCharacterAtIndex(str, indx) {
   // write your code here & return value
+  return str[indx];
 }
 
 /**
@@ -51,6 +52,8 @@ function findTheCharacterAtIndex(str, indx) {
  */
 function sliceTheString(str, start, end) {
   // write your code here & return value
+  console.log(str.slice(start, end));
+  return str;
 }
 
 /**
@@ -61,6 +64,8 @@ function sliceTheString(str, start, end) {
  */
 function splitTheString(str, separator) {
   // write your code here & return value
+  str.split(separator);
+  return str;
 }
 
 /**
@@ -70,6 +75,7 @@ function splitTheString(str, separator) {
  */
 function makeAllUpperCase(str) {
   // write your code here & return value
+  return str.toUpperCase();
 }
 
 /**
@@ -79,6 +85,7 @@ function makeAllUpperCase(str) {
  */
 function makeAllLowerCase(str) {
   // write your code here & return value
+  return str.toLowerCase();
 }
 
 /**

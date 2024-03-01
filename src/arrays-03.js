@@ -18,6 +18,11 @@
  */
 function addUpArrayElements(arr) {
   // write your code here & return value
+  let sum = 0;
+  arr.forEach((num) => {
+    sum += num;
+  });
+  return arr;
 }
 
 /**
@@ -28,7 +33,9 @@ function addUpArrayElements(arr) {
  * ? must use the map() array method - https://youtu.be/nO4fLugOX9k
  */
 function makeSquareNumbers(arr) {
-  // write your code here & return value
+  // write your code here & return value\
+  const sq = arr.map((num) => num * num);
+  return sq;
 }
 
 /**
@@ -43,6 +50,8 @@ function makeSquareNumbers(arr) {
  */
 function filterForLargeWords(arr, length) {
   // write your code here & return value
+  const results = arr.filter((word) => word.length > length);
+  return results;
 }
 
 /**
@@ -54,6 +63,7 @@ function filterForLargeWords(arr, length) {
  */
 function findTheFirstEvenNumber(arr) {
   // write your code here & return value
+  arr.find();
 }
 
 /**
@@ -66,6 +76,8 @@ function findTheFirstEvenNumber(arr) {
  */
 function sortCaseSensitive(arr) {
   // write your code here & return value
+  arr.sort();
+  return arr;
 }
 
 /**
@@ -79,6 +91,8 @@ function sortCaseSensitive(arr) {
  */
 function makeTheString(arr, separator) {
   // write your code here & return value
+  arr.join(separator);
+  return arr;
 }
 
 /**
@@ -90,6 +104,9 @@ function makeTheString(arr, separator) {
  */
 function reverseTheArray(arr) {
   // write your code here & return value
+  const arr2 = [...arr];
+  arr2.reverse();
+  return arr2;
 }
 
 /**
@@ -101,6 +118,11 @@ function reverseTheArray(arr) {
  */
 function makeMirrorArray(arr) {
   // write your code here & return value
+  const arr2 = [...arr];
+  const arr3 = [...arr];
+  arr2.reverse();
+  arr3.pop();
+  return arr3.concat(arr2);
 }
 
 /**
@@ -114,6 +136,8 @@ function makeMirrorArray(arr) {
  */
 function dropRight(arr, n) {
   // write your code here & return value
+  arr.sort(n);
+  return arr;
 }
 
 /**

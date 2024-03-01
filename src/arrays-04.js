@@ -18,6 +18,12 @@
  */
 function getAbsoluteSum(nums) {
   // write your code here & return value
+  const initialValue = 0;
+  const sumWithInitial = nums.reduce(
+    (accumulator, currentValue) => accumulator + Math.abs(currentValue),
+    initialValue,
+  );
+  return sumWithInitial;
 }
 
 /**
@@ -29,6 +35,8 @@ function getAbsoluteSum(nums) {
  */
 function removeStrings(arr) {
   // write your code here & return value
+  const arr2 = arr.filter((name) => typeof name !== 'string');
+  return arr2;
 }
 
 /**
@@ -51,6 +59,10 @@ function removeStrings(arr) {
  */
 function findMinMax(arr) {
   // write your code here & return value
+  const arr2 = [...arr];
+  Math.max(arr2);
+  Math.min(arr2);
+  return arr2;
 }
 
 /**
@@ -75,6 +87,7 @@ function findMinMax(arr) {
  */
 function getTelNo(numbers) {
   // write your code here & return value
+  const num = [...numbers];
 }
 
 module.exports = {
