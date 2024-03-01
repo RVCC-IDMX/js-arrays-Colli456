@@ -22,7 +22,7 @@ function addUpArrayElements(arr) {
   arr.forEach((num) => {
     sum += num;
   });
-  return arr;
+  return sum;
 }
 
 /**
@@ -63,7 +63,7 @@ function filterForLargeWords(arr, length) {
  */
 function findTheFirstEvenNumber(arr) {
   // write your code here & return value
-  arr.find();
+  return arr.find((num) => num % 2 === 0);
 }
 
 /**
@@ -76,8 +76,9 @@ function findTheFirstEvenNumber(arr) {
  */
 function sortCaseSensitive(arr) {
   // write your code here & return value
-  arr.sort();
-  return arr;
+  const newArr = [...arr];
+  newArr.sort();
+  return newArr;
 }
 
 /**
@@ -91,8 +92,7 @@ function sortCaseSensitive(arr) {
  */
 function makeTheString(arr, separator) {
   // write your code here & return value
-  arr.join(separator);
-  return arr;
+  return arr.join(separator);
 }
 
 /**
@@ -136,8 +136,7 @@ function makeMirrorArray(arr) {
  */
 function dropRight(arr, n) {
   // write your code here & return value
-  arr.sort(n);
-  return arr;
+  return arr.slice(0, -n);
 }
 
 /**
@@ -151,6 +150,7 @@ function dropRight(arr, n) {
  */
 function dropLeft(arr, n) {
   // write your code here & return value
+  return arr.slice(n);
 }
 
 /**
@@ -164,6 +164,7 @@ function dropLeft(arr, n) {
  */
 function checkArrayForValue(arr, val) {
   // write your code here & return value
+  return arr.includes(val);
 }
 
 module.exports = {
