@@ -52,8 +52,7 @@ function findTheCharacterAtIndex(str, indx) {
  */
 function sliceTheString(str, start, end) {
   // write your code here & return value
-  console.log(str.slice(start, end));
-  return str;
+  return str.slice(start, end);
 }
 
 /**
@@ -64,8 +63,7 @@ function sliceTheString(str, start, end) {
  */
 function splitTheString(str, separator) {
   // write your code here & return value
-  str.split(separator);
-  return str;
+  return str.split(separator);
 }
 
 /**
@@ -98,6 +96,7 @@ function makeAllLowerCase(str) {
  */
 function makeWordTitleCase(word) {
   // write your code here & return value
+  return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 }
 
 /**
@@ -110,6 +109,7 @@ function makeWordTitleCase(word) {
  */
 function replaceTheString(str, oldStr, newStr) {
   // write your code here & return value
+  return str.replace(oldStr, newStr);
 }
 
 /**
@@ -122,6 +122,7 @@ function replaceTheString(str, oldStr, newStr) {
  */
 function makeSentenceTitleCase(sentence) {
   // write your code here & return value
+  return sentence.split(' ').map(makeWordTitleCase).join(' ');
 }
 
 module.exports = {
